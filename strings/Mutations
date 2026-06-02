@@ -1,0 +1,10 @@
+Sample Input :
+
+STDIN           Function
+-----           --------
+abracadabra     s = 'abracadabra'
+5 k             position = 5, character = 'k'
+
+Sample Output : abrackdabra
+
+solution :
