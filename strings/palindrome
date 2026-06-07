@@ -1,0 +1,14 @@
+input : madam
+output : madam is an palindrome
+
+inpput : hello
+output : hello is not an palindrome
+
+solution :
+n=input()
+k=n[::-1]
+if n==k:
+  print(f"{n} is an palindrome")
+else :
+  print(f"{n} is not an palindrome")
+ 
