@@ -1,0 +1,7 @@
+input : hello
+output : olleh
+
+solution :
+n=input()
+k=n[::-1]
+print(k)
