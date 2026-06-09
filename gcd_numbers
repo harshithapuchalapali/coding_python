@@ -1,0 +1,13 @@
+Input: a = 4, b = 6
+Output: 2
+Explanation: Divisors of a = 1, 2, 4, Divisors of b = 1, 2, 3, 6
+Greatest Common divisor = 2.
+
+solution :
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+a=int(input())
+b=int(input())
+print(gcd(a,b))
