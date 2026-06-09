@@ -1,0 +1,22 @@
+input : 5
+output : 
+
+5 5 5 5 5 5 5 5 5
+5 4 4 4 4 4 4 4 5
+5 4 3 3 3 3 3 4 5
+5 4 3 2 2 2 3 4 5
+5 4 3 2 1 2 3 4 5
+5 4 3 2 2 2 3 4 5
+5 4 3 3 3 3 3 4 5
+5 4 4 4 4 4 4 4 5
+5 5 5 5 5 5 5 5 5
+
+def concentric_sqrs(n):
+  size = 2 * n - 1
+  for i in range(size):
+      for j in range(size):
+          value = n - min(i, j, size - i - 1, size - j - 1) [# formula :value = N - min(top, left, bottom, right)]
+          print(value, end=" ")
+      print()
+n=int(input())
+concentric_sqrs(n)
