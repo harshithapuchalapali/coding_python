@@ -1,0 +1,17 @@
+input : 5
+output :
+
+E 
+D E 
+C D E 
+B C D E 
+A B C D E
+
+solution :
+def patter3(n):
+ for i in range(n):
+    for j in range(n-i-1, n):
+       print(chr(ord('A')+j), end=" ")
+      print()
+n=int(input())
+pattern3(n)
