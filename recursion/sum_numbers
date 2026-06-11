@@ -1,0 +1,11 @@
+input : 10
+output : 55
+
+solution :
+
+def sum_num(n):
+    if n==1 :
+        return 1
+    return (n*(n+1))/2
+n=int(input())
+print(sum_num(n))
