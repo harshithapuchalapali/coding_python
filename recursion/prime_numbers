@@ -1,0 +1,18 @@
+input : 20
+output :2 3 5 7 11 13 17 19
+
+solution :
+
+def is_prime(n, i=2 ):
+    if n <= 1:          # Not prime
+        return False
+    if i == n:          # No divisor found
+        return True
+    if n % i == 0:      # Divisible → not prime
+        return False
+    return is_prime(n, i + 1)
+n = int(input())
+
+for num in range(2, n + 1):
+    if is_prime(num):
+        print(num, end=" ")
