@@ -1,12 +1,13 @@
 input : apple
-output : {a:1,p:2,l:1,e:1}
+output : {'a': 1, 'p': 2, 'l': 1, 'e': 1}
+
 
 solution :
 
 n = input()
 count = {}
 for i in n :
-   for i in count :
+   if i in count :
        count[i] += 1
    else :
        count[i] = 1
