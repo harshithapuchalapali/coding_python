@@ -1,0 +1,12 @@
+input : apple
+output : p
+
+solution :
+
+n = input()
+count = {}
+
+for ch in n:
+    count[ch] = count.get(ch, 0) + 1
+
+print(max(count))
