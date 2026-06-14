@@ -13,3 +13,16 @@ for i in range(1, n+1):
         print(bit, end=" ")
         bit = 1 - bit
     print()
+
+( or )
+
+for i in range(1,n+1):
+    if i%2==0:
+        star=0
+    else:
+        star=1
+
+    for j in range(i):
+        print(star, end=" ")
+        star=1-star
+    print()
