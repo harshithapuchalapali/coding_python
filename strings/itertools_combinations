@@ -1,0 +1,52 @@
+input:hacker 3
+output :
+A
+C
+E
+H
+K
+R
+AC
+AE
+AH
+AK
+AR
+CE
+CH
+CK
+CR
+EH
+EK
+ER
+HK
+HR
+KR
+ACE
+ACH
+ACK
+ACR
+AEH
+AEK
+AER
+AHK
+AHR
+AKR
+CEH
+CEK
+CER
+CHK
+CHR
+CKR
+EHK
+EHR
+EKR
+HKR
+
+from itertools import combinations
+n,k=input().split()
+a=n.upper()
+h=int(k)
+s=sorted(a)
+for i in range(1,h+1):
+    for c in combinations(s,i):
+        print("".join(c))
