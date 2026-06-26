@@ -1,0 +1,25 @@
+anagram - Two strings having same length, same characters with the same frequencies.
+output : True
+
+1: Sort the strings
+
+solution:
+def is_anagram(s, t):
+    return sorted(s) == sorted(t)
+
+print(is_anagram("listen", "silent"))  
+
+2: Using a frequency dictionary
+
+solutions:
+from collections import Counter
+
+def is_anagram(s, t):
+    return Counter(s) == Counter(t)
+
+print(is_anagram("listen", "silent"))
+
+
+Time Complexity :
+Sorting approach: O(n log n)
+Frequency counting approach: O(n)
