@@ -1,0 +1,8 @@
+Input:  "hello world"
+Output: "world hello"
+
+solution:
+def reverse_string(s):
+  return " ".join(s.split()[::-1])
+s=input()
+print(reverse_string(S))
