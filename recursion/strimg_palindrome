@@ -1,0 +1,22 @@
+input:madam
+output: true
+
+input: abbad
+output: false
+
+def palindrome(s):
+    def check(left, right):
+        # Base case
+        if left >= right:
+            return True
+
+        # Characters don't match
+        if s[left] != s[right]:
+            return False
+
+        # Recursive call
+        return check(left + 1, right - 1)
+
+    return check(0, len(s) - 1)
+  s=input()
+  print(palindrome(s))
