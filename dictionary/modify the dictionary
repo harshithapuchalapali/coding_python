@@ -1,0 +1,21 @@
+input: apple
+       mango 1.1
+output:{"banana": 0.75,"orange": 0.80,"mango":1.1}
+
+solution :
+
+# Initial shopping list dictionary
+fruit_prices = {
+    "apple": 0.50,
+    "banana": 0.75,
+    "orange": 0.80
+}
+fruit_to_remove = input()
+new_fruit, new_price = input().split()
+new_price = float(new_price) 
+
+if fruit_to_remove in fruit_prices:
+    del fruit_prices[fruit_to_remove]
+
+fruit_prices[new_fruit] = new_price
+print(fruit_prices)
