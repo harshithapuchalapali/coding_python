@@ -1,0 +1,12 @@
+
+| Method      | Purpose                    |
+| ----------- | -------------------------- |
+| `keys()`    | Returns all keys           |
+| `values()`  | Returns all values         |
+| `items()`   | Returns key-value pairs    |
+| `get()`     | Safe access                |
+| `update()`  | Merge/update dictionary    |
+| `pop()`     | Remove a key               |
+| `popitem()` | Removes last inserted item |
+| `clear()`   | Removes everything         |
+| `copy()`    | Creates shallow copy       |
