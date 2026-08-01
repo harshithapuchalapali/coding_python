@@ -1,3 +1,28 @@
+Dictionary:
+A dictionary is a mutable data structure that stores data as key-value pairs. 
+Keys are unique and immutable, values can be any data type, and most operations like search, insert, and delete take O(1) time on average.
+
+Definition: Stores data in Key : Value pairs.
+Mutable:Can add, update, and delete items.
+Ordered:Maintains insertion order (Python 3.7+).
+Keys: Must be unique and immutable (int, str, tuple).
+Values: Can be of any data type and can repeat.
+Access: dict[key] or dict.get(key)
+Add/Update: dict[key] = value, update()
+Delete: del, pop(), clear()
+Traversal: keys(), values(), items()
+Search/Insert/Delete: O(1) average (uses a hash table).
+
+Dictionary
+│
+├── Key : Value
+├── Mutable 
+├── Ordered (3.7+)
+├── Keys → Unique + Immutable
+├── Values → Any Type + Duplicates Allowed
+├── Access → [] / get()
+├── Methods → keys(), values(), items(), update(), pop()
+└── Time → O(1) Search, Insert, Delete
 
 | Method      | Purpose                    |
 | ----------- | -------------------------- |
