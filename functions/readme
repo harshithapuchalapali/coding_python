@@ -1,3 +1,5 @@
+Python Functions:
+
 Function → Reusable block of code.
 def → Defines a function.
 return → Sends value back.
@@ -21,7 +23,25 @@ print() only displays the output.
 
 Q. What is a lambda function?
 A small anonymous function written in a single line using the lambda keyword.
+EX : lambda arguments : expression
 
 Q. What are *args and **kwargs?
 *args collects multiple positional arguments into a tuple.
 **kwargs collects multiple keyword arguments into a dictionary.
+
+- Variable-Length Arguments (*args)
+Accepts multiple positional arguments.
+EX:
+def total(*numbers):
+    print(sum(numbers))
+total(1,2,3,4)
+
+- Keyword Variable Arguments (**kwargs)
+Accepts multiple keyword arguments.
+EX:
+def details(**data):
+    print(data)
+details(name="Harshitha", age=22)
+
+Output
+{'name':'Harshitha','age':22}
