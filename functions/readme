@@ -1,0 +1,27 @@
+Function → Reusable block of code.
+def → Defines a function.
+return → Sends value back.
+Parameters → Variables in function definition.
+Arguments → Values passed during function call.
+Types of arguments → Positional, Keyword, Default, *args, **kwargs.
+Variable scope → Local and Global.
+global → Modify global variable.
+Lambda → One-line anonymous function.
+Recursion → Function calling itself.
+Nested function → Function inside another function.
+pass → Placeholder.
+Docstring → Function documentation.
+map() → Transform elements.
+filter() → Select elements.
+reduce() → Combine elements into a single value.
+
+Q. Difference between return and print()?
+return sends a value back to the caller.
+print() only displays the output.
+
+Q. What is a lambda function?
+A small anonymous function written in a single line using the lambda keyword.
+
+Q. What are *args and **kwargs?
+*args collects multiple positional arguments into a tuple.
+**kwargs collects multiple keyword arguments into a dictionary.
