@@ -1,0 +1,52 @@
+Recursion –
+
+✅ Definition
+Recursion is a technique where a function calls itself to solve a smaller version of the same problem.
+It continues until a Base Case is reached.
+
+✅ Two Important Parts
+Base Case → Stops the recursion.
+Recursive Case → Calls the function again with a smaller input.
+
+✅ Syntax
+def fun(n):
+    if n == 0:      # Base Case
+        return
+    fun(n-1)        # Recursive Call
+
+✅ How It Works
+Function calls itself.
+Each call is stored in the Call Stack.
+When the base case is reached, the functions return one by one (Stack Unwinding).
+
+✅ Example (Factorial)
+def fact(n):
+    if n == 0:
+        return 1
+    return n * fact(n-1)
+Flow: fact(3) → fact(2) → fact(1) → fact(0) → returns 1 → 2 → 6
+
+✅ Advantages
+Short and clean code.
+Best for Trees, Graphs, Backtracking, and Divide & Conquer problems.
+
+✅ Disadvantages
+Uses extra memory (Call Stack).
+Slower than loops in some cases.
+Missing a base case causes RecursionError (Stack Overflow).
+
+✅ Common Applications
+Factorial
+Fibonacci
+Binary Search
+Tree Traversal (DFS)
+Merge Sort
+Quick Sort
+Backtracking (N-Queens, Sudoku)
+
+🎯 Points to Remember
+Recursion = Function calls itself.
+Base Case = Stops recursion.
+Call Stack = Stores function calls.
+No Base Case = Infinite recursion → RecursionError.
+Best for recursive data structures (Trees/Graphs).
