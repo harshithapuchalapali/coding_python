@@ -1,0 +1,19 @@
+NumPy (Numerical Python) is a Python library used for fast numerical and mathematical operations, especially on arrays.
+
+Main object: ndarray — multidimensional array.
+Faster than Python lists because it uses optimized, low-level operations.
+Supports vectorized operations, so loops are often unnecessary.
+Provides functions for mathematics, statistics, linear algebra, and array manipulation.
+Common functions: np.array(), np.zeros(), np.ones(), np.arange(), np.mean(), np.max(), np.reshape().
+Applications: Machine Learning, Data Science, Image Processing, and Scientific Computing.
+
+Example:
+
+import numpy as np
+
+a = np.array([1, 2, 3])
+print(a * 2)   # [2 4 6]
+
+Interview keyword:
+
+NumPy = Fast numerical computation + multidimensional arrays + vectorization.
