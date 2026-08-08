@@ -1,0 +1,17 @@
+Hashing is a technique used to store and retrieve data quickly using a hash function that converts a key into an index.
+
+Hash Function: Converts a key → hash value/index.
+Hash Table: Stores data using the generated index.
+Average Time Complexity: O(1) for search, insertion, and deletion.
+Collision: Occurs when two keys generate the same index.
+Collision Handling:
+Chaining: Store multiple values at the same index using a linked list/bucket.
+Open Addressing: Find another empty position (Linear Probing, Quadratic Probing, Double Hashing).
+Applications: Dictionaries, sets, databases, caching, password storage, and duplicate detection.
+
+Example:
+hash("Apple") → 5 → Store "Apple" at index 5.
+
+Interview keyword:
+
+Hashing = Key → Hash Function → Index → Fast O(1) access.
