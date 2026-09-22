@@ -1,0 +1,23 @@
+Given two strings s1 and s2, perform the following operations on s1:
+
+trim() should remove all leading and trailing spaces from s1.
+exists() should find the first occurrence of s2 in s1 and return its index. If s2 is not present, return -1.
+titleIt() should convert the first character of each word in s1 to uppercase.
+casesSwap() should swap the case of every character in s1.
+Implement these operations and return the required results.
+
+solution :
+class Solution:
+    def trim(self, s1):
+        return s1.strip() 
+    
+    def exists(self, s1, s2):
+        return s1.find(s2)
+    
+    def titleIt(self, s1):
+        k=s1.title()
+        return k
+    
+    def casesSwap(self, s1):
+        m=s1.swapcase()
+        return m
