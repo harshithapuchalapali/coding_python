@@ -1,0 +1,28 @@
+input: n = 11
+Output: 3
+Explanation: The square root of 11 lies in between 3 and 4 so floor of the square root is 3.
+
+solution:
+
+def floorSqrt(n):
+    res = 1
+    while res * res <= n:
+        res += 1
+    return res-1 
+
+if __name__ == "__main__":
+    n = 11
+    print(floorSqrt(n))
+
+(or)
+
+import math
+def floorSqrt(n):
+
+    # mathematical formula	
+    res = int(math.exp(0.5 * math.log(n)))
+
+    if (res + 1) ** 2 <= n:
+        res += 1
+    
+    return res
